@@ -1,11 +1,10 @@
 import { useReducer, useEffect } from "react";
-import { TodoList, Todos } from "../08-useReducer/components/TodoList";
 import {
   DeleteDataAction,
   SetDataAction,
   TodoReducer,
   ToggleDataAction,
-} from "../08-useReducer/todoReducer";
+} from "./todoReducer";
 
 const init = () => JSON.parse(localStorage.getItem("todos") || "") || [];
 
